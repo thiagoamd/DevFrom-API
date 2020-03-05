@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj": {}
+    "c:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj": {
+    "c:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj",
+        "projectUniqueName": "c:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj",
         "projectName": "DevFrom.API",
-        "projectPath": "C:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj",
+        "projectPath": "c:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj",
         "packagesPath": "C:\\Users\\Thiago Pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\obj\\",
+        "outputPath": "c:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,6 +43,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.0, )"
@@ -54,6 +58,14 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
             }
           },
           "imports": [
