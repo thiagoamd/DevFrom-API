@@ -8,7 +8,7 @@ namespace DevFrom.API.Helpers
         {
             response.Headers.Add("Application-Error", message);
             response.Headers.Add("Access-Control-Expose-Headers","Application-Error");
-            response.Headers.Add("Acess-Control-Allow-Origin","*");
+            response.Headers.Add("Access-Control-Allow-Origin","*");
         }
     }
 }

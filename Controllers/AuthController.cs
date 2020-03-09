@@ -64,7 +64,7 @@ namespace DevFrom.API.Controllers
             var claims = new[]
             {
                     new Claim(ClaimTypes.NameIdentifier, userFromRepo.Id.ToString()),
-                    new Claim(ClaimTypes.Name, userFromRepo.UserName)
+                    new Claim(ClaimTypes.Name, userFromRepo.UserName)                    
                 };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
@@ -82,10 +82,11 @@ namespace DevFrom.API.Controllers
             var tokenHandler = new JwtSecurityTokenHandler();
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
-
+            
             return Ok(new
             {
-                token = tokenHandler.WriteToken(token)
+                token = tokenHandler.WriteToken(token),
+                name = userFromRepo.UserName                
             });
         }
     }
