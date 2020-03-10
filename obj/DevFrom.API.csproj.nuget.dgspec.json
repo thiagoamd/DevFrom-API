@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj": {}
+    "C:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj": {
+    "C:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj",
+        "projectUniqueName": "C:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj",
         "projectName": "DevFrom.API",
-        "projectPath": "c:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj",
+        "projectPath": "C:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\DevFrom.API.csproj",
         "packagesPath": "C:\\Users\\Thiago Pereira\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\obj\\",
+        "outputPath": "C:\\Users\\Thiago Pereira\\Documents\\DevFrom\\DevFrom.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,7 +43,15 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[3.1.0, )"
             },

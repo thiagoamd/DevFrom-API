@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using DevFrom.API.Data;
 using DevFrom.API.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -35,9 +36,16 @@ namespace DevFrom.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(opt =>
+                {
+                    opt.SerializerSettings.ReferenceLoopHandling =
+                    Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                }
+            );
             services.AddCors();
+            services.AddAutoMapper(typeof(DatingRepository).Assembly);
             services.AddScoped<IAuthRepository,AuthRepository>();
+            services.AddScoped<IDateRepository,DatingRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options => 
             {
