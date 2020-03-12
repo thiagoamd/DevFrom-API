@@ -20,6 +20,8 @@ namespace DevFrom.API.Helpers
             
             CreateMap<Photo, PhotosForDetailedDto>();
             CreateMap<UserForUpdateDto, User>();
+            CreateMap<Photo, PhotoReturnDto>();
+            CreateMap<PhotoForCreationDto, Photo>();
         }
     }
 }
